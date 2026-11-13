@@ -1,5 +1,9 @@
+import Nav from "./components/nav.jsx"
+
 function App() {
-  return <h1>NoWebRadar</h1>;
+  return (
+    <Nav></Nav>
+)
 }
 
 export default App;
