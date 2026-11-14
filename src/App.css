@@ -29,19 +29,24 @@ nav {
   font-size: 1.75rem;
 }
 
-.how-it-works__button {
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-link {
   background: none;
   border: none;
   color: var(--text-main);
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
   transition: color 0.3s ease;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 0;
+  font-weight: 400;
 }
 
-.how-it-works__button:hover {
+.nav-link:hover {
   color: #4a9eff;
-  background-color: rgba(74, 158, 255, 0.1);
 }
 

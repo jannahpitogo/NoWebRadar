@@ -14,9 +14,13 @@ export default function Nav() {
                 <div className="logo">
                     <Link to="/">NoWebRadar</Link>
                 </div>
-                <button onClick={handleHowItWorksClick} className="how-it-works__button">
-                    How It Works
-                </button>
+                <div className="nav-links">
+                    <button onClick={handleHowItWorksClick} className="nav-link">
+                        How it works
+                    </button>
+                    <a href="#pricing" className="nav-link">Pricing</a>
+                    <a href="#login" className="nav-link">Login</a>
+                </div>
             </header>
         </nav>
     )
