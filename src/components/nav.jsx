@@ -1,12 +1,22 @@
-export default function Nav() {
-    return (
+import { Link } from 'react-router-dom'
 
+export default function Nav() {
+    const handleHowItWorksClick = () => {
+        const element = document.getElementById('how-it-works')
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
+    return (
         <nav>
-            <header>
+            <header className="navigation-bar">
                 <div className="logo">
-                    <a href="/">NoWebRadar</a>
+                    <Link to="/">NoWebRadar</Link>
                 </div>
-                <a href="#how-it-works">How It Works</a>
+                <button onClick={handleHowItWorksClick} className="how-it-works__button">
+                    How It Works
+                </button>
             </header>
         </nav>
     )
