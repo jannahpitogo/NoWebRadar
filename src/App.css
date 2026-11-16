@@ -66,6 +66,60 @@ nav {
   color: var(--text);
 }
 
+/* Theme switch */
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.theme-switch:hover {
+  color: var(--text);
+}
+
+.theme-switch:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.theme-switch-track {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  border-radius: 999px;
+  background-color: var(--border);
+  transition: background-color 0.3s ease;
+}
+
+.theme-switch-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.theme-switch[aria-checked="true"] .theme-switch-track {
+  background-color: var(--accent);
+}
+
+.theme-switch[aria-checked="true"] .theme-switch-knob {
+  transform: translateX(18px);
+}
+
 /* Responsive navigation */
 @media (max-width: 600px) {
   :root {

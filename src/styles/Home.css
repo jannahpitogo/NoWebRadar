@@ -106,7 +106,7 @@
 }
 
 .step p {
-  color: #a0a0a0;
+  color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -127,7 +127,7 @@
 
 .benefits p {
   font-size: 1rem;
-  color: #a0a0a0;
+  color: var(--text-secondary);
   line-height: 1.8;
   max-width: 700px;
   margin: 0 auto;
@@ -149,7 +149,7 @@
 
 .cta-section p {
   font-size: 1rem;
-  color: #a0a0a0;
+  color: var(--text-secondary);
   margin: 0 0 32px;
 }
 
@@ -157,8 +157,8 @@
 .footer {
   padding: 40px 24px;
   text-align: center;
-  border-top: 1px solid #16233a;
-  color: #666;
+  border-top: 1px solid var(--footer-border);
+  color: var(--text-faint);
   font-size: 0.85rem;
   margin-top: 40px;
 }

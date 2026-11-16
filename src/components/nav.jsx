@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import Logo from './Logo.jsx'
+import ThemeSwitch from './ThemeSwitch.jsx'
 
-export default function Nav() {
+export default function Nav({ theme, onToggleTheme }) {
     const handleHowItWorksClick = () => {
         const element = document.getElementById('how-it-works')
         if (element) {
@@ -12,16 +14,14 @@ export default function Nav() {
         <nav>
             <header className="navigation-bar">
                 <div className="logo">
-                    <svg className="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <circle cx="12" cy="12" r="9.5" fill="none" stroke="var(--accent)" strokeWidth="2.2" />
-                        <circle cx="12" cy="12" r="4" fill="var(--accent)" />
-                    </svg>
+                    <Logo className="logo-icon" />
                     <Link to="/">NoWebRadar</Link>
                 </div>
                 <div className="nav-links">
                     <button onClick={handleHowItWorksClick} className="nav-link">
                         How it works
                     </button>
+                    <ThemeSwitch theme={theme} onToggle={onToggleTheme} />
                 </div>
             </header>
         </nav>

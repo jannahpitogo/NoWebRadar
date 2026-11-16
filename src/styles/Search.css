@@ -127,7 +127,7 @@
 }
 
 .results-table thead {
-  background-color: #16233a;
+  background-color: var(--surface-hover);
   border-bottom: 1px solid var(--border);
 }
 
@@ -152,7 +152,7 @@
 }
 
 .results-table tbody tr:hover {
-  background-color: #16233a;
+  background-color: var(--surface-hover);
 }
 
 .results-table td {
@@ -162,7 +162,7 @@
 }
 
 .rating {
-  color: #ffa500;
+  color: var(--rating);
   font-weight: 600;
   font-size: 0.9rem;
   white-space: nowrap;
@@ -182,7 +182,7 @@
 }
 
 .website.has-website {
-  color: #70d070;
+  color: var(--positive);
 }
 
 /* No Results */
@@ -195,7 +195,7 @@
 }
 
 .no-results p {
-  color: #a0a0a0;
+  color: var(--text-secondary);
   font-size: 1rem;
 }
 
@@ -203,7 +203,7 @@
 .demo-info {
   text-align: center;
   padding: 40px 20px;
-  color: #888;
+  color: var(--text-faint);
   font-size: 0.9rem;
 }
 
