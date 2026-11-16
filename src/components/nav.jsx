@@ -12,14 +12,16 @@ export default function Nav() {
         <nav>
             <header className="navigation-bar">
                 <div className="logo">
+                    <svg className="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9.5" fill="none" stroke="var(--accent)" strokeWidth="2.2" />
+                        <circle cx="12" cy="12" r="4" fill="var(--accent)" />
+                    </svg>
                     <Link to="/">NoWebRadar</Link>
                 </div>
                 <div className="nav-links">
                     <button onClick={handleHowItWorksClick} className="nav-link">
                         How it works
                     </button>
-                    <a href="#pricing" className="nav-link">Pricing</a>
-                    <a href="#login" className="nav-link">Login</a>
                 </div>
             </header>
         </nav>

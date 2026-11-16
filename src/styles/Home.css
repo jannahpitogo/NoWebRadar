@@ -9,52 +9,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 40px 60px;
+  padding: 48px 24px 64px;
   text-align: center;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 720px;
 }
 
 .hero h1 {
-  font-family: var(--logo-font);
-  font-size: 3rem;
+  font-family: var(--font-sans);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
-  margin-bottom: 24px;
-  line-height: 1.3;
-  color: var(--text-main);
+  margin: 0 0 32px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--text);
 }
 
 .hero-description {
-  font-size: 1.1rem;
-  margin-bottom: 32px;
-  color: #a0a0a0;
-  line-height: 1.7;
+  font-size: 1.25rem;
+  margin: 0 auto 28px;
+  max-width: 720px;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .cta-primary {
   display: inline-block;
-  background-color: #4a9eff;
-  color: var(--text-main);
-  padding: 14px 40px;
-  border-radius: 4px;
+  background-color: var(--accent);
+  color: var(--accent-ink);
+  padding: 14px 24px;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 600;
+  line-height: 1.2;
   transition: background-color 0.3s ease;
-  margin-bottom: 24px;
 }
 
 .cta-primary:hover {
-  background-color: #357abd;
+  background-color: var(--accent-hover);
 }
 
 .hero-tagline {
   display: block;
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 24px;
-  letter-spacing: 0.3px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  opacity: 0.8;
+  margin-top: 18px;
 }
 
 /* How It Works Section */
@@ -64,7 +66,7 @@
 }
 
 .how-it-works h2 {
-  font-family: var(--logo-font);
+  font-family: var(--font-sans);
   font-size: 2.2rem;
   margin-bottom: 80px;
   color: var(--text-main);
@@ -84,10 +86,10 @@
 }
 
 .step-number {
-  font-family: var(--logo-font);
+  font-family: var(--font-sans);
   font-size: 3.5rem;
   font-weight: 700;
-  color: #4a9eff;
+  color: var(--accent);
   margin-bottom: 20px;
   line-height: 1;
 }
@@ -112,7 +114,7 @@
 }
 
 .benefits h2 {
-  font-family: var(--logo-font);
+  font-family: var(--font-sans);
   font-size: 2.2rem;
   margin-bottom: 24px;
   color: var(--text-main);
@@ -134,7 +136,7 @@
 }
 
 .cta-section h2 {
-  font-family: var(--logo-font);
+  font-family: var(--font-sans);
   font-size: 2.2rem;
   margin-bottom: 16px;
   color: var(--text-main);
@@ -151,7 +153,7 @@
 .footer {
   padding: 40px 20px;
   text-align: center;
-  border-top: 1px solid #1a2a3a;
+  border-top: 1px solid #16233a;
   color: #666;
   font-size: 0.85rem;
   margin-top: 40px;

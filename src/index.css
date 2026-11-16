@@ -1,19 +1,26 @@
-@font-face {
-  font-family: "Horizon";
-  font-style: normal;
-  font-weight: 100 800;
-  font-display: swap;
-  src: url("./assets/fonts/Horizon.woff2")
-    format("woff2");
+:root {
+  --bg: #0A1226;
+  --surface: #0F1A32;
+  --border: #1E2A40;
+  --text: #EEF2FA;
+  --muted: #8B95A9;
+  --accent: #6BCDAA;
+  --accent-hover: #5AB997;
+  --accent-ink: #0B1A15;
+  --font-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --background-color: var(--bg);
+  --text-main: var(--text);
 }
 
-:root {
-  --background-color: #0A1226;
-  --text-main: white;
-  --logo-font: "Horizon";
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-main);
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
