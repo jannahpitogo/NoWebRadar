@@ -17,9 +17,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  width: 100%;
   max-width: 920px;
+  height: var(--nav-height);
   margin: 0 auto;
-  padding: 26px 0;
+  padding: 0;
 }
 
 .logo {
@@ -62,4 +64,37 @@ nav {
 
 .nav-link:hover {
   color: var(--text);
+}
+
+/* Responsive navigation */
+@media (max-width: 600px) {
+  :root {
+    --nav-height: 68px;
+  }
+
+  nav {
+    padding: 0 16px;
+  }
+
+  .navigation-bar {
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    gap: 8px;
+  }
+
+  .logo-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
 }

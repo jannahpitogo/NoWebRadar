@@ -8,6 +8,7 @@
   --accent-hover: #5AB997;
   --accent-ink: #0B1A15;
   --font-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --nav-height: 84px;
 
   --background-color: var(--bg);
   --text-main: var(--text);
